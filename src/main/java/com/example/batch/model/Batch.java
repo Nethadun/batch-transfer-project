@@ -19,9 +19,10 @@ public class Batch {
     private Long id;
     @Column(name = "name")
     private String name;
+    @Column(name = "telephone")
     private String telephone;
 
-    public Batch(String name, String telephone) {
+    public Batch(final String name,final String telephone) {
         this.name = name;
         this.telephone = telephone;
     }
